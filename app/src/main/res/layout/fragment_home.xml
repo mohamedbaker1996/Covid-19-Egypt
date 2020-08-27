@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_homebg">
+
+    <TextView
+        android:id="@+id/tv_stay_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/txt_stay_home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_stay_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/txt_stay_safe"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_egypt_flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="7dp"
+
+
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tv_feeling_tired"
+        app:layout_constraintEnd_toStartOf="@+id/tv_stay_home"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/tv_stay_safe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/egypt_flag_heart"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_feeling_tired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txt_feeling_tired"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_desc_feeling_tired"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_egypt_flag"
+        />
+
+    <TextView
+        android:id="@+id/tv_desc_feeling_tired"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:includeFontPadding="true"
+        android:text="@string/txt_desc_feeling_tired"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_call_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_feeling_tired" />
+
+    <Button
+        android:id="@+id/btn_call_now"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stats_button"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="8dp"
+        android:paddingStart="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/txt_call_now"
+        android:textColor="#EDE1E1"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_desc_feeling_tired"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/tv_desc_feeling_tired"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_prevention"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txt_prevention"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#ffffff"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_call_now" />
+
+    <ImageView
+        android:id="@+id/img_prevention1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_prevention2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_prevention2"
+        app:layout_constraintTop_toTopOf="@+id/img_prevention2"
+        app:srcCompat="@drawable/ic_prevention1" />
+
+    <ImageView
+        android:id="@+id/img_prevention2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_prevention3"
+        app:layout_constraintEnd_toStartOf="@+id/img_prevention1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_prevention3"
+        app:layout_constraintTop_toTopOf="@+id/img_prevention3"
+        app:srcCompat="@drawable/ic_prevention2" />
+
+    <ImageView
+        android:id="@+id/img_prevention3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_prevention2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prevention"
+        app:srcCompat="@drawable/ic_prevention3"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_avoid_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_avoid_people"
+        android:textAlignment="center"
+        android:textColor="#FBF9F9"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/img_prevention1"
+        app:layout_constraintStart_toStartOf="@+id/img_prevention1"
+        app:layout_constraintTop_toBottomOf="@+id/img_prevention1" />
+
+    <TextView
+        android:id="@+id/tv_wash_hands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_wash_hands"
+        android:textAlignment="center"
+        android:textColor="#F4EBEB"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/img_prevention2"
+        app:layout_constraintStart_toStartOf="@+id/img_prevention2"
+        app:layout_constraintTop_toBottomOf="@+id/img_prevention2" />
+
+    <TextView
+        android:id="@+id/tv_wear_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_wear_mask"
+        android:textAlignment="center"
+        android:textColor="#EFE3E3"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/img_prevention3"
+        app:layout_constraintStart_toStartOf="@+id/img_prevention3"
+        app:layout_constraintTop_toBottomOf="@+id/img_prevention3" />
+
+    <ImageButton
+        android:id="@+id/img_symptoms"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/ic_symptoms_banner"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btn_check_stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wear_mask"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_symptoms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/txt_symptoms"
+        android:textColor="#F6F2F2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/img_symptoms"
+        app:layout_constraintEnd_toEndOf="@+id/img_symptoms"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_symptoms"
+        app:layout_constraintTop_toTopOf="@+id/img_symptoms"
+        app:layout_constraintVertical_bias="0.502"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_check_stats"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_select"
+        android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="25dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/txt_check_stats"
+        android:textAlignment="viewEnd"
+        android:textColor="#F8F4F4"
+        android:textDirection="firstStrongRtl"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_symptoms" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+</androidx.constraintlayout.widget.ConstraintLayout>

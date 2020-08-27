@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Covid-19-Egypt</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_check_stats">اطلع على الاحصائيات</string>
+    <string name="txt_symptoms">أعراض الفيرس</string>
+    <string name="txt_wear_mask">ارتدي كمامه\n دائما</string>
+    <string name="tv_wash_hands">اغسل يديك \n باستمرار</string>
+    <string name="txt_avoid_people">تجنب الاقتراب \n من الاشخاص</string>
+    <string name="txt_call_now">إتصل الآن</string>
+    <string name="txt_prevention">أساليب الوقايه</string>
+    <string name="txt_desc_feeling_tired">اذا كنت تشعر بأعراض فيرس كورونا لا تتردد بالاتصال للمساعدة .</string>
+    <string name="txt_feeling_tired">هل تشعر بالتعب ؟</string>
+    <string name="txt_stay_safe">تظل أمنا</string>
+    <string name="txt_stay_home">إلزم البيت</string>
+    <string name="tx_intro_slider_1" translatable="false" >التطبيق ده معملول لمساعدتك خلال فتره الوباء تقدر لو حسيت بأعراض او تعرف حد عنده أعراض تقدر تبلغ عن طريق التطبيق . </string>
+    <string name="tx_intro_slider_2" translatable="false">وكمان تقدر تشوف أعراض الفيرس من الاعراض الشائعه وحتي الأعراض الخطره وتقدر تتابع الاحصائيات الموثوقه من وزاره الصحه العاليميه في أي وقت حيض بيتعمل تحديث للارقام كل عشر دقايق .</string>
+    <string name="admob_app_id" translatable="false"> ca-app-pub-1640388995037866~6557986213 </string>
+    <string name="admob_ad_unit_id" translatable="false"> ca-app-pub-1640388995037866/7348146095 </string>
+    <string name="pref_previously_started">prevStarted</string>
+</resources>
